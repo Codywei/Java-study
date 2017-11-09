@@ -1,6 +1,6 @@
 ﻿# HashMap ,HashTable
 
-标签（空格分隔）： 未分类
+标签（空格分隔）： java 基础
 
 ---
 
@@ -9,7 +9,7 @@
 定义： HashMap是基于哈希表的Map接口的非同步实现。此实现提供所有可选的映射操作，并允许使用null值和null键。此类不保证映射的顺序，特别是它不保证该顺序恒久不变。</br>
     
 数据结构：在java编程语言中，最基本的结构就是两种，一个是数组，另外一个是模拟指针（引用），所有的数据结构都可以用这两个基本结构来构造的，HashMap也不例外。HashMap实际上是一个“链表散列”的数据结构，即数组和链表的结合体。</br>
-![HashMap结构示意图][1]
+![此处输入图片的描述][1]
 ```java
 /** 
  * The table, resized as necessary. Length MUST Always be a power of two. 
@@ -111,13 +111,7 @@ http://www.cnblogs.com/dolphin0520/p/3592500.html</br>
 Hashtable 继承于Dictionary，实现了Map、Cloneable、java.io.Serializable接口。</br>
 Hashtable 的函数都是同步的，这意味着它是线程安全的。它的key、value都不可以为null。</br>
 此外，Hashtable中的映射不是有序的。</br>
-![HashTable继承关系和结构][1]
-
-
-  
-
-
-  [1]: http://images.cnitblog.com/blog/497634/201401/280030194375782.jpg
+![此处输入图片的描述][2]
   
   
  HashTable源码分析参照以下链接（主要突出它是线程安全的）</br>
@@ -135,3 +129,7 @@ Hashtable 的函数都是同步的，这意味着它是线程安全的。它的k
 （4）HashTable使用Enumeration进行遍历；HashMap使用Iterator进行遍历。</br>
 （5）HashTable中hash数组默认大小是11，增加的方式是old*2+1；HashMap中hash数组的默认大小是16，而且一定是2的指数。</br>
 （6）哈希值的使用不同，HashTable直接使用对象的hashCode；HashMap重新计算hash值，而且用与代替求模。
+
+
+  [1]: http://www.admin10000.com/UploadFiles/Document/201311/16/20131116091617994485.JPG
+  [2]: http://images.cnitblog.com/blog/497634/201401/280030194375782.jpg
