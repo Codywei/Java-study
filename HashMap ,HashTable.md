@@ -111,7 +111,7 @@ http://www.cnblogs.com/dolphin0520/p/3592500.html</br>
 Hashtable 继承于Dictionary，实现了Map、Cloneable、java.io.Serializable接口。</br>
 Hashtable 的函数都是同步的，这意味着它是线程安全的。它的key、value都不可以为null。</br>
 此外，Hashtable中的映射不是有序的。</br>
-![此处输入图片的描述][2]
+
   
   
  HashTable源码分析参照以下链接（主要突出它是线程安全的）</br>
