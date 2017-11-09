@@ -53,7 +53,6 @@ String中的对象是不可变的，也就可以理解为常量，线程安全�
 AbstractStringBuilder是StringBuilder与StringBuffer的公共父类，定义了一些字符串的基本操作，如expandCapacity、append、insert、indexOf等公共方法。</br>
 StringBuffer对方法加了**同步锁**或者对调用的方法加了同步锁，所以是线程安全的。</br>
 StringBuilder并没有对方法进行加同步锁，所以是非线程安全的。</br>
-。
 **（3）性能**</br>
 每次对String 类型进行改变的时候，都会生成一个新的String 对象，然后将指针指向新的String 对象。
 StringBuffer每次都会对 StringBuffer 对象本身进行操作，而不是生成新的对象并改变对象引用。</br>
