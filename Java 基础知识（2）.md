@@ -65,7 +65,6 @@ http://blog.csdn.net/qq_30739519/article/details/50877217
 <h2>4.Concurrenthashmap实现原理</h2>
 （这一部分可与HashMap、HashTable结合）
 ![此处输入图片的描述][1]
-  [1]: http://images2017.cnblogs.com/blog/400827/201709/400827-20170928212457434-1134706220.png
   上图显示了Concurrenthashmap的锁分段技术，ConcurrentHashMap是由Segment数组结构和HashEntry数组结构组成。</br>
 (1)Segment是一种可重入锁ReentrantLock，在ConcurrentHashMap里扮演锁的角色，HashEntry则用于存储键值对数据。</br>
 (2)一个ConcurrentHashMap里包含一个Segment数组，Segment的结构和HashMap类似，是一种数组和链表结构。</br> 
@@ -88,13 +87,10 @@ Exception类表示程序可以处理的异常，可以捕获且可能恢复。�
 <h2>6.Unchecked Exception和Checked Exception，各列举几个</h2>
 Unchecked Exception:
 1. 指的是程序的瑕疵或逻辑错误，并且在运行时无法恢复。</br>
-2. 包括Error与RuntimeException及其子类，如：OutOfMemoryError,
-3.ndeclaredThrowableException, IllegalArgumentException,
-IllegalMonitorStateException, NullPointerException, IllegalStateException,
+2. 包括Error与RuntimeException及其子类，如：OutOfMemoryError,undeclaredThrowableException, IllegalArgumentException,IllegalMonitorStateException, NullPointerException,IllegalStateException,
 IndexOutOfBoundsException等。</br>
-4. 语法上不需要声明抛出异常。</br>
-
-Checked Exception:
+3. 语法上不需要声明抛出异常。</br>
+Checked Exception:</br>
 1. 代表程序不能直接控制的无效外界情况（如用户输入，数据库问题，网络异常，文件丢失等）</br>
 2. 除了Error和RuntimeException及其子类之外，如：ClassNotFoundException,
 NamingException, ServletException, SQLException, IOException等。</br>
@@ -102,6 +98,9 @@ NamingException, ServletException, SQLException, IOException等。</br>
 
 <h2> 7.Java中如何实现代理机制(JDK、CGLIB)</h2>
 
-JDK动态代理：代理类和目标类实现了共同的接口，用到InvocationHandler接口。
-CGLIB动态代理：代理类是目标类的子类，用到MethodInterceptor接口。
+JDK动态代理：代理类和目标类实现了共同的接口，用到InvocationHandler接口。</br>
+CGLIB动态代理：代理类是目标类的子类，用到MethodInterceptor接口。</br>
  
+
+
+  [1]: http://images2017.cnblogs.com/blog/400827/201709/400827-20170928212457434-1134706220.png
