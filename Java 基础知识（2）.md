@@ -65,6 +65,12 @@ http://blog.csdn.net/qq_30739519/article/details/50877217
 <h2>4.Concurrenthashmap实现原理</h2>
 （这一部分可与HashMap、HashTable结合）
 ![此处输入图片的描述][1]
+  [1]: http://ifeve.com/wp-content/uploads/2012/12/ConcurrentHashMap%E7%BB%93%E6%9E%84%E5%9B%BE.jpg
+
+
+
+
+
   上图显示了Concurrenthashmap的锁分段技术，ConcurrentHashMap是由Segment数组结构和HashEntry数组结构组成。</br>
 (1)Segment是一种可重入锁ReentrantLock，在ConcurrentHashMap里扮演锁的角色，HashEntry则用于存储键值对数据。</br>
 (2)一个ConcurrentHashMap里包含一个Segment数组，Segment的结构和HashMap类似，是一种数组和链表结构。</br> 
@@ -106,4 +112,3 @@ CGLIB动态代理：代理类是目标类的子类，用到MethodInterceptor接�
  
 
 
-  [1]: http://ifeve.com/wp-content/uploads/2012/12/ConcurrentHashMap%E7%BB%93%E6%9E%84%E5%9B%BE.jpg
