@@ -85,11 +85,14 @@ Exception类表示程序可以处理的异常，可以捕获且可能恢复。�
 
 
 <h2>6.Unchecked Exception和Checked Exception，各列举几个</h2>
-Unchecked Exception:
+
+Unchecked Exception:</br>
 1. 指的是程序的瑕疵或逻辑错误，并且在运行时无法恢复。</br>
 2. 包括Error与RuntimeException及其子类，如：OutOfMemoryError,undeclaredThrowableException, IllegalArgumentException,IllegalMonitorStateException, NullPointerException,IllegalStateException,
 IndexOutOfBoundsException等。</br>
 3. 语法上不需要声明抛出异常。</br>
+
+
 Checked Exception:</br>
 1. 代表程序不能直接控制的无效外界情况（如用户输入，数据库问题，网络异常，文件丢失等）</br>
 2. 除了Error和RuntimeException及其子类之外，如：ClassNotFoundException,
@@ -103,4 +106,4 @@ CGLIB动态代理：代理类是目标类的子类，用到MethodInterceptor接�
  
 
 
-  [1]: http://images2017.cnblogs.com/blog/400827/201709/400827-20170928212457434-1134706220.png
+  [1]: http://ifeve.com/wp-content/uploads/2012/12/ConcurrentHashMap%E7%BB%93%E6%9E%84%E5%9B%BE.jpg
