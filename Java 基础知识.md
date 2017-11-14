@@ -58,6 +58,10 @@ StringBuffer每次都会对 StringBuffer 对象本身进行操作，而不是生
 相同情况下使用 StirngBuilder 相比使用StringBuffer 仅能获得10%~15%左右的性能提升，但却要冒多
 线程不安全的风险。</br>
 
+
+参考链接：http://www.cnblogs.com/dolphin0520/p/3778589.html   </br>
+         http://rednaxelafx.iteye.com/blog/774673/
+
 <h2>8.hashCode和equals方法的关系</h2>
 equals相等，hashcode必相等；hashcode相等，equals可能不相等。
 
