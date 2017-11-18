@@ -28,6 +28,9 @@ c.该类对应的java.lang.Class对象没有任何地方被引用，无法在任
 <h2>2.垃圾收集算法</h2>
 分代收集：新生代选用复制算法，老年代选用标记清除或标记整理</br>
 参考链接：http://www.cnblogs.com/dolphin0520/p/3783345.html</br>
+http://www.cnblogs.com/hnrainll/archive/2013/11/06/3410042.html</br>
+
+
 
 
 <h2>3.安全点，安全区域</h2>
@@ -37,8 +40,10 @@ GC收集时，为防止新的变化，分析必须在能确保一致性的快照
 <h2>4.class文件结构</h2>
 参考链接：https://www.cnblogs.com/xiaoruoen/archive/2011/11/30/2267309.html</br>
 
-<h2>5.类加载机制</h2>
+<h2>5.类加载机制和双亲委派机制</h2>
 参考链接：http://www.cnblogs.com/xiaoruoen/archive/2011/12/01/2262788.html</br>
+http://blog.csdn.net/zhoudaxia/article/details/35824249</br>
+
 
 
 

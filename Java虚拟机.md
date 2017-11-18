@@ -67,12 +67,31 @@ Java可以处于物理上不连续的空间，只要逻辑连续即可，如果�
 
 
 
-<h2>4.OutOfMemory异常测试</h2>
+<h2>4.java虚拟机各个区域的OOM，如何重现OOM</h2>
 1.Java堆溢出（不停的创建新的对象实例）</br>
 2.虚拟机栈和本地方法栈溢出（不停地创建新线程）</br>
 3.运行时常量池溢出（使用String.intern(）方法不停创建新的字符串常量）</br>
 4.方法区溢出（借助CGlib创建动态类）</br>
 5.本机直接内存溢出（使用unsafe分配本机内存）</br>
+参考链接：http://hllvm.group.iteye.com/group/wiki/2857-JVM</br>
+
+<h2>5.用什么工具可以查出内存泄漏</h2>
+一. Memory</br>
+Analyzer－是一款开源的JAVA内存分析软件，查找内存泄漏，能容易找到大块内存并验证谁在一直占用它，它是基于Eclipse</br>
+
+RCP(Rich Client Platform)，可以下载RCP的独立版本或者Eclipse的插件。</br>
+
+二. JProbe－分析Java的内存泄漏。</br>
+
+三.JProfiler－一个全功能的Java剖析工具，专用于分析J2SE和J2EE应用程序。它把CPU、执行绪和内存的剖析组合在一个强大的应用中，GUI可以找到效能瓶颈、抓出内存泄漏、并解决执行绪的问题</br>。
+
+四. JRockit－用来诊断Java内存泄漏并指出根本原因，专门针对Intel平台并得到优化，能在Intel硬件上获得最高的性能。</br>
+
+五. http://YourKit-.NET & Java Profiling业界领先的Java和.NET程序性能分析工具。</br>
+
+六.AutomatedQA －AutomatedQA的获奖产品performance profiling和memory debugging工具集的下一代替换产品，支持Microsoft,Borland, Intel, Compaq 和 GNU编译器。可以为.NET和Windows程序生成全面细致的报告，从而帮助您轻松隔离并排除代码中含有的性能问题和内存/资源泄露问题。支持.Net 1.0,1.1,2.0,3.0和Windows 32/64位应用程序。</br>
+
+七.Compuware DevPartner Java Edition－包含Java内存检测,代码覆盖率测试,代码性能测试,线程死锁,分布式应用等几大功能模块
 
 
 
