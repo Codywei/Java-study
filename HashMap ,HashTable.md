@@ -10,6 +10,7 @@
     
 数据结构：在java编程语言中，最基本的结构就是两种，一个是数组，另外一个是模拟指针（引用），所有的数据结构都可以用这两个基本结构来构造的，HashMap也不例外。HashMap实际上是一个“链表散列”的数据结构，即数组和链表的结合体。</br>
 ![此处输入图片的描述][1]
+图片链接：http://www.admin10000.com/UploadFiles/Document/201311/16/20131116091617994485.JPG
 ```java
 /** 
  * The table, resized as necessary. Length MUST Always be a power of two. 
