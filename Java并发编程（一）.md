@@ -342,6 +342,6 @@ Semaphore管理一组虚拟许可，有构造函数指定数量（数量为1即�
 
 （1）首先考虑采用HashMap，通过sychronized方法满足原子性但是性能较差，同一时间只有一个线程进行计算操作。</br>
 （2）使用ConcurrentHashMap改善性能，无需使用同步方法，但是可能导致很多线程在计算同样的值</br>
-（3）考虑阻塞方法，使用基于FutureTask的ConcurrentHashMap，Future.get实现阻塞知道结果返回，减少了多次计算，但仍然不是原子性的</br>
+（3）考虑阻塞方法，使用基于FutureTask的ConcurrentHashMap，Future.get实现阻塞直到结果返回，减少了多次计算，但仍然不是原子性的</br>
 （4）使用ConcurrentHashMap中的 putifAbsent()</br>
 （5）继续解决缓存污染问题，当缓存结果失效时移除，解决缓存逾期，缓存清理等等问题。</br>
